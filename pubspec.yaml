@@ -1,0 +1,28 @@
+name: checklist_master
+description: "Projeto de lista de checagem."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: any
+  path_provider: any
+  flutter_color_picker_plus: ^2.0.1
+  flutter_swipe_detector: ^1.0.1
+  intl: ^0.19.0
+  google_fonts: ^6.2.1
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/checklist_image.png
