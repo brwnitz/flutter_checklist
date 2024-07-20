@@ -1,4 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.gfxconsultoria.flutter_checklist">
     <application
         android:label="flutter_checklist"
         android:name="${applicationName}"

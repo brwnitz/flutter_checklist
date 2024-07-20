@@ -21,7 +21,7 @@ class CheckedDao{
     var dbClient = await _databasehelper.db;
     await dbClient.rawUpdate(
         'UPDATE Checked SET nameChecked = ?, descChecked = ?, isChecked = ?, dateChecked = ?, isFavorite = ? WHERE idChecked = ?',
-        [checked?.nameChecked, checked?.descChecked, checkBool(checked?.isChecked), checked?.dateChecked,checked?.idChecked, checkBool(checked?.isFavorite)],
+        [checked?.nameChecked, checked?.descChecked, checkBool(checked?.isChecked), checked?.dateChecked, checkBool(checked?.isFavorite), checked?.idChecked],
       );
   }
 
@@ -42,7 +42,7 @@ class CheckedDao{
         isChecked: checkInt((list[i]['isChecked'])),
         dateChecked: list[i]['dateChecked'],
         idTopic: list[i]['idTopic'],
-        isFavorite: checkInt(list[i]['isFavorite'])
+        isFavorite: checkInt((list[i]['isFavorite']))
       ));
     }
     return checked;
@@ -60,7 +60,7 @@ class CheckedDao{
         isChecked: checkInt((list[i]['isChecked'])),
         dateChecked: list[i]['dateChecked'],
         idTopic: list[i]['idTopic'],
-        isFavorite: list[i]['isFavorite'],
+        isFavorite: checkInt((list[i]['isFavorite'])),
       ));
     }
     return checked; 
@@ -76,7 +76,7 @@ class CheckedDao{
       isChecked: checkInt((list[0]['isChecked'])),
       dateChecked: list[0]['dateChecked'],
       idTopic: list[0]['idTopic'],
-      isFavorite: checkInt(list[0]['isFavorite']),
+      isFavorite: checkInt((list[0]['isFavorite'])),
     );
   }
 
@@ -92,7 +92,7 @@ class CheckedDao{
         isChecked: checkInt((list[i]['isChecked'])),
         dateChecked: list[i]['dateChecked'],
         idTopic: list[i]['idTopic'],
-        isFavorite: checkInt(list[i]['isFavorite']),
+        isFavorite: checkInt((list[i]['isFavorite'])),
       ));
     }
     return checked;

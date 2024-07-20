@@ -1,4 +1,4 @@
-package com.example.flutter_checklist
+package com.gfxconsultoria.flutter_checklist
 
 import io.flutter.embedding.android.FlutterActivity
 

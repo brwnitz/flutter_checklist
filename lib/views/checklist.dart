@@ -26,10 +26,13 @@ class ChecklistWidget extends State<Checklist> {
   void initState() {
     super.initState();
     _topic = widget.topic;
+    checkedsFuture = getChecked();
   }
 
   void refreshChecked() {
-    checkedsFuture = getChecked();
+    setState(() {
+      checkedsFuture = getChecked();
+    });
   }
 
   @override

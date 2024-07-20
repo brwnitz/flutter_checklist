@@ -1,7 +1,7 @@
 name: checklist_master
-description: "Projeto de lista de checagem."
+description: "Aplicação de organização de tarefas."
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.1
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
@@ -9,8 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sqflite: any
-  path_provider: any
+  sqflite: ^2.0.0+3
+  path_provider: ^2.0.2
   flutter_color_picker_plus: ^2.0.1
   flutter_swipe_detector: ^1.0.1
   intl: ^0.19.0

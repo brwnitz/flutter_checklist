@@ -122,9 +122,9 @@ class CheckedBuilderState extends State<CheckedBuilder>{
                           onPressed: (){
                             setState(() {
                               snapshot.data![index].isFavorite = snapshot.data![index].isFavorite ? false : true;
+                              });
                               widget.checkedDao.updatedItem(snapshot.data![index]);
                               widget.refreshChecked();
-                            });
                           },
                         ),
                         )
